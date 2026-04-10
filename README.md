@@ -19,8 +19,13 @@ Site desenvolvido durante a disciplina **Introdução ao Desenvolvimento Web (SC
 
 ## Estrutura da página principal
 * **Cabeçalho:**
-    * Logo
-    * Estrelas de avaliação
-    * Botão de login do admin
-    * Contato
+    * Fixo
+        * Logo
+        * Estrelas de avaliação
+    * Tab
+        * Home
+        * Botão de login do admin
+        * Ordem de serviço
+        * Contato
+
 

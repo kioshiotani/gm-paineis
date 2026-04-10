@@ -1,0 +1,33 @@
+.my-bg-gradient-black {
+    background-image: linear-gradient(to bottom, #000000, transparent);
+}
+
+#nav-bottom {
+    height: 15em;
+    z-index: 423;
+    position: relative;
+}
+
+#nav-bottom-carousel {
+    position: relative;
+}
+
+#carousel-start {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
