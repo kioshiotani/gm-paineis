@@ -23,9 +23,10 @@ Site desenvolvido durante a disciplina **Introdução ao Desenvolvimento Web (SC
         * Logo
         * Estrelas de avaliação
     * Tab
-        * Home
         * Botão de login do admin
         * Ordem de serviço
         * Contato
+
+
 
 
