@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg text-warning bg-black">
+        <nav class="navbar navbar-expand-lg text-warning bg-black navbar-dark">
             <div class="container-fluid">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand text-white" href="#">GM Painéis</a>
@@ -23,7 +23,7 @@
                     </div>
                     <span class="ms-1">(0)</span>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -91,34 +91,47 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid container-md">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Benefícios da limpeza</h2>
+        <section class="container-fluid pt-5 pb-4 bg-black" id="benefits">
+            <div id="benefits-content">
+                <div class="row justify-content-center justify-content-md-evenly mb-md-5"> 
+                    <div class="col-auto col-md-4">
+                        <div class="card text-dark bg-light mb-3 mx-md-auto">
+                            <div class="card-header"><h4>Maior eficiência</h4></div>
+                            <div class="card-body">
+                                <p class="card-text">Placas solares limpas captam mais luz solar, permitindo o sistema operar com capacidade máxima.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-4">
+                        <div class="card text-dark bg-light mb-3 mx-md-auto">
+                            <div class="card-header"><h4>Maior durabilidade</h4></div>
+                            <div class="card-body">
+                                <p class="card-text">O Acúmulo de sujeira pode causar superaquecimento das placas, reduzindo sua vida útil.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 text-center mb-3">
-                    <img src="./assets/images/painel_vert3.jpeg"
-                    class="img-fluid rounded-4 object-fit-cover w-60 w-md-75"
-                    alt="Foto de placas solares parcialmente limpas">
-                </div>
-                <div class="col-12 text-center">
-                    <h2>Benefícios da limpeza</h2>
-                    <ul>
-                        <li>Maior eficiência e geração de energia</li>
-                        <small>Painéis sujos captam menos luz solar.</small>
-                        <li>Maior durabilidade das placas solares</li>
-                        <small>O acúmulo de sujeira pode levar ao superaquecimento.</small>
-                        <li class="d-none d-md-block">Retorno financeiro mais rápido</li>
-                        <small class="d-none d-md-block">Com maior geração de energia, o retorno sobre o investimento se torna mais veloz,
-                                especialmente para empresas e consumidores que utilizam grandes sistemas de placas solares.</small>
-                        <li>Redução de custos com manutenção corretiva</li>
-                        <small>Acúmulos de sujeiras podem ser danosos.</small>
-                        <small class="d-block mt-3">Créditos: <a href="https://www.weg.net/solar/blog/limpeza-de-modulos-fotovoltaicos-por-que-ela-e-essencial-para-a-eficiencia-energetica/" target="_blank" rel="noreferrer noopener" class="text-decoration-none text-danger" style="font-weight: normal;">WEG</a></small>
-                    </ul>
+                <div class="row justify-content-center justify-content-md-evenly pt-md-5"> 
+                    <div class="col-auto col-md-4">
+                        <div class="card text-dark bg-light mb-3 mx-md-auto">
+                            <div class="card-header"><h4>Aceleração do retorno financeiro</h4></div>
+                            <div class="card-body">
+                                <p class="card-text">Com maior geração de energia, o retorno sobre o investimento ocorre de mais velozmente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-4">
+                        <div class="card text-dark bg-light mb-3 mx-md-auto">
+                            <div class="card-header"><h4>Redução de custos em manutenção corretiva</h4></div>
+                            <div class="card-body">
+                                <p class="card-text">Acúmulos de sujeira podem prejudicar o funcionamento das placas solares.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
+            <div id="benefits-black"></div>
+        </section> 
 
     </main>
 

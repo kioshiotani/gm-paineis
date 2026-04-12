@@ -8,6 +8,11 @@
     background-image: linear-gradient(to bottom, #000000, transparent);
 }
 
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+
 #nav-bottom-carousel {
     position: relative;
     height: 50vh;
@@ -97,6 +102,32 @@ p {
     width: 60%;
 }
 
+#benefits {
+    background-color: black;
+    background-image: url("../assets/images/painel_vert1.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#benefits-content {
+    z-index: 23;
+    position: relative;
+}
+
+
+#benefits-black {
+    background-color: rgba(0,0,0,0.79);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+
 
 @media (min-width: 315px) {
     #div-diagonal {
@@ -127,7 +158,16 @@ p {
         .w-md-75 { width: 75% !important; }
         .w-md-50 { width: 50% !important; }
         .w-md-25 { width: 25% !important; }
-    }   
+    }
+    #benefits {
+        background-image: url("../assets/images/painel_horz2.jpeg");
+        background-position: center;
+    }
+
+    #benefits-content .card {
+        width: 80%;
+        height: 100%;
+    }
 }
 
 @media (min-width: 1300px) {
