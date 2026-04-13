@@ -31,6 +31,16 @@ Site desenvolvido durante a disciplina **Introdução ao Desenvolvimento Web (SC
 
 * **Main:**
     * Apresentação do prestador de serviço (dar credibilidade, certificação, tempo de trabalho)
+    * Motivação para limpeza de painéis solares
+    * Espaço para adicionar avaliação e exibir avaliações
+    * Formulário para solicitar serviço
+      * Colocar ao lado calendário com os dias disponíveis
+  
+* **Footer:**
+    * Formas de contato com prestador de serviço (nº de telefone)
+
+## Estrutura da página do admin
+A definir
 
 
 
