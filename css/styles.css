@@ -176,3 +176,13 @@ p {
     }
 }
 
+#loginBtn {
+    color: #ffffff;
+    background-color:#FF6B00;
+    border:none;
+}
+
+.btn-laranja:hover {
+    background-color: #e66000;
+    color: #ffffff;
+}
