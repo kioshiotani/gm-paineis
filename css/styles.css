@@ -130,6 +130,10 @@ p {
 #sub-form {
     background-color: black;
     background-image: url("../assets/images/painel_horz4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    
     position: relative;
 }
 
