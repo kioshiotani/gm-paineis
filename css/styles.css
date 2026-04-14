@@ -5,6 +5,7 @@
     --bs-body-color: #212529 !important;
     --bs-body-color-rgb: 33, 37, 41 !important;
     --bs-tertiary-bg: #f8f9fa !important;
+}
 
 body {
     background-color: #ffffff !important;
