@@ -162,13 +162,13 @@ p {
 
 @media (min-width: 315px) {
     #div-diagonal {
-        background: linear-gradient(20deg, #ffffff 50%, transparent 50%);
+        background: linear-gradient(20deg, var(--bs-body-bg) 50%, transparent 50%);
     }
 }
 
 @media (min-width: 550px) {
     #div-diagonal {
-        background: linear-gradient(15deg, #ffffff 50%, transparent 50%);
+        background: linear-gradient(15deg, var(--bs-body-bg) 50%, transparent 50%);
     }
 }
 
@@ -185,11 +185,7 @@ p {
     a:hover {
         font-weight: bold;
     }
-    @media (min-width: 768px) {
-        .w-md-75 { width: 75% !important; }
-        .w-md-50 { width: 50% !important; }
-        .w-md-25 { width: 25% !important; }
-    }
+
     #benefits {
         background-image: url("../assets/images/painel_horz2.jpeg");
         background-position: center;
@@ -203,7 +199,7 @@ p {
 
 @media (min-width: 1300px) {
     #div-diagonal {
-        background: linear-gradient(7deg, #ffffff 50%, transparent 50%);
+        background: linear-gradient(7deg, var(--bs-body-bg) 50%, transparent 50%);
     }
 }
 
