@@ -163,8 +163,8 @@ p {
 
 #whatsapp-float {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 7px;
+    left: 7px;
     border-radius: 50px;
     z-index: 1000;
     display: flex;
@@ -173,6 +173,7 @@ p {
     text-decoration: none;
     height: 50px;
     width: 50px;
+    font-size: 25px;
 }
 
 
@@ -211,6 +212,13 @@ p {
     #benefits-content .card {
         width: 80%;
         height: 100%;
+    }
+    #whatsapp-float {
+        height: 70px;
+        width: 70px;
+        font-size: 30px;
+        bottom: 20px;
+        left: 20px;
     }
 }
 
