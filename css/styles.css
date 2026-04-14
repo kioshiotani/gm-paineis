@@ -1,6 +1,6 @@
 [data-bs-theme="dark"] {
-  --bs-body-bg: #ffffff; /* Um azul marinho bem escuro */
-  --bs-body-color: #000000; /* Texto claro para contraste */
+  --bs-body-bg: #ffffff !important; 
+  --bs-body-color: #000000 !important; 
 }   
 
 
