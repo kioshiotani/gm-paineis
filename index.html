@@ -6,11 +6,12 @@
     <title>GM Painéis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.6.1/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-q/at3GHMpO8VjBXzZ+ymx89MhqKtK9AcxYuECgmRq1b2a3797G4sfEM/ylqgywpd" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg text-warning bg-black navbar-dark">
+        <nav class="navbar navbar-expand-lg text-warning" style="background-color: black">
             <div class="container-fluid">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand text-white" href="#">GM Painéis</a>
@@ -92,8 +93,8 @@
             </div>
         </section>
         <section class="container-fluid pt-5 pb-4 bg-black" id="benefits">
-            <h2 class="display-3 text-white text-center mb-5" style="position: relative; z-index: 10;">Por que limpar painéis solares?</h2>
             <div id="benefits-content">
+                <h2 class="display-3 text-white text-center mb-5">Por que limpar painéis solares?</h2> 
                 <div class="row justify-content-center justify-content-md-evenly mb-md-5"> 
                     <div class="col-auto col-md-4">
                         <div class="card text-dark bg-light mb-3 mx-md-auto">
@@ -140,7 +141,7 @@
             <h2 class="display-2 text-center">Avaliações de nossos clientes</h2>
             <div id="feedbacks" class="carousel slide p-5 d-md-none">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active p-1">
                         <div class="d-flex justify-content-center">
                             <div class="card bg-dark" style="width: 18rem; height: 20rem;">
                                 <div class="card-body">
@@ -158,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item p-1">
                         <div class="d-flex justify-content-center">
                             <div class="card bg-dark" style="width: 18rem; height: 20rem;">
                                 <div class="card-body">
@@ -176,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item p-1">
                         <div class="d-flex justify-content-center">
                             <div class="card bg-dark" style="width: 18rem; height: 20rem;">
                                 <div class="card-body">
@@ -309,13 +310,48 @@
                 </button>
             </div>
         </section>
-        <section id="form">
-            <h2 class="display-2 pt-5 text-center text-white">Agende uma limpeza</h2>
+        <section id="sub-form" class="p-5">
+            <div id="sub-form-black"></div>
+            <div id="sub-form-content">
+                <h2 class="text-white display-2 text-center mb-1">Agende uma limpeza</h2>
+                <h3 class="text-white text-center mb-5" style="font-weight: normal;">Atendo em Andradina-SP e região</h3>
+                <div class="row justify-content-center gy-4">
+                    <div id="calendar" class="col-md-5 col-12 order-md-0 order-1 bg-white mx-md-3" style="border-radius: 10px">
+                        ...
+                    </div>
+                    <form id="user_form" class="col-md-5 col-12 order-md-1 order-0 bg-white mx-md-3 p-5" style="border-radius: 10px;">
+                        <div class="mb-3">
+                            <label for="user_name" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="user_name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="user_tel" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="user_tel" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="mb-3">
+                            <label for="user_city" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="user_city" placeholder="Andradina">
+                        </div>
+                        <div class="mb-3">
+                            <label for="user_neighbourhood" class="form-label">Bairro</label>
+                            <input type="tel" class="form-control" id="user_neighbourhood" placeholder="Jardim Europa">
+                        </div>
+                        <div class="mb-3">
+                            <label for="user_housenumber" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="user_housenumber" placeholder="574 (coloque X se não houver)">
+                        </div>
+                        <button type="submit" class="btn text-white d-md-inline-block d-none fw-bold" style="background-color: #FF6B00;">Solicitar limpeza</button>
+                    </form>
+                </div>
+                <button type="submit" form="user_form" class="btn d-block text-white d-md-none col-7 my-4 order-3 mx-auto fw-bold" style="background-color: #FF6B00;">Solicitar limpeza</button>
+
+            </div>
         </section>
+
     </main>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.6.1/dist/js/coreui.bundle.min.js" integrity="sha384-bfWw6UWgmz1820GDTev34DLTN/eDwwySOsuWriOxV32ZBfwFgiPaDzvOP+vG0Yur" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
