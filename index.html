@@ -396,7 +396,40 @@
                     </form>
                 </div>
                 <button type="submit" form="user_form" class="btn d-block text-white d-md-none col-7 my-4 order-3 mx-auto fw-bold" style="background-color: #FF6B00;">Solicitar limpeza</button>
+            </div>
+        </section>
+        <section id="feedback-form" class="p-5">
+            <h2 class="display-2 text-center mb-5">Deixe sua avaliação</h2>
+            <div class="d-flex justify-content-center">
+                <form id="user-feedback" class="col-md-4 col-12 bg-dark p-5" style="border-radius: 10px;">
+                    <div class="mb-3">
+                        <label for="user_name_feedback" class="form-label text-white">Nome</label>
+                        <input type="text" class="form-control" id="user_name_feedback" placeholder="Matteo Augusto Pinheiro">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user_job_feedback" class="form-label text-white">Ocupação</label>
+                        <input type="text" class="form-control" id="user_job" placeholder="Estudante Ocasional">
+                    </div>
+                    <div class="mb-5">
+                        <label for="user_comment_feedback" class="form-label text-white">Comentário</label>
+                        <input type="text" class="form-control" id="user_comment_feedback" placeholder="Serviço excelente, a geração de energia chegou no auge.">
+                    </div>
+                    <div class="d-flex justify-content-around mb-5">
+                        <span class="text-white">1</span>
+                        <div class="d-flex justify-content-evenly">
+                            <div class="radio_feedback">
+                                <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="feedback_star_1">
+                                <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="feedback_star_2">
+                                <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="feedback_star_3">
+                                <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="feedback_star_4">
+                                <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="feedback_star_5" checked>
+                            </div>
+                        </div>
+                        <span class="text-white">5</span>
+                    </div>
 
+                    <button type="submit" class="btn text-white d-md-inline-block d-none fw-bold" style="background-color: #FF6B00;">Enviar</button>
+                </form>
             </div>
         </section>
 
