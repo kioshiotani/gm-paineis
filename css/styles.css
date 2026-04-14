@@ -88,7 +88,7 @@ body {
 #div-diagonal {
     width: 100%;
     height: 20%;
-    background: linear-gradient(30deg, #ffffff 50%, transparent 50%);
+    background: linear-gradient(30deg, var(--bs-body-bg) 50%, transparent 50%);
     bottom: 0%;
     left: 0%;
     position: absolute;
