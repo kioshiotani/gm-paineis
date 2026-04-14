@@ -127,7 +127,26 @@ p {
     z-index: 1;
 }
 
+#sub-form {
+    background-color: black;
+    background-image: url("../assets/images/painel_horz4.jpeg");
+    position: relative;
+}
 
+#sub-form-black {
+    background-color: rgba(0,0,0,0.79);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+#sub-form-content {
+    z-index: 23;
+    position: relative;
+}
 
 @media (min-width: 315px) {
     #div-diagonal {
