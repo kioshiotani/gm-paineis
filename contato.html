@@ -25,7 +25,7 @@
             <a class="nav-link text-white" href="#">Avaliações</a>
         </li>
         <li class="nav-item mb-2">
-            <a class="nav-link text-white" href="contato.html">Alterar Contato</a>
+            <a class="nav-link text-white" href="#">Alterar Contato</a>
         </li>
         <li class="nav-item mt-2">
             <a class="nav-link text-danger" href="#">Sair</a>
@@ -48,59 +48,22 @@
         </div>
     </nav>
     <div class="col-md-8 mx-auto bg-light p-4 rounded shadow align-items-center justify-content-center mt-4">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h4 class="mb-0 fw-bold">Abril 2026</h4>
-            <div>
-                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-chevron-left"></i></button>
-                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-chevron-right"></i></button>
+        <form action="#" class="p-5" id="updateContact">
+            <div class="d-flex justify-content-center">
+                <h3 class="text-dark">Alterar Informações de Contato</h3>
             </div>
-        </div>
-
-        <div class="calendar-weekdays d-flex text-center text-muted fw-bold mb-3">
-            <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
-        </div>
-
-        <div class="calendar-days">
-            <div class="calendar-day empty">29</div>
-            <div class="calendar-day empty">30</div>
-            <div class="calendar-day empty">31</div>
-            
-            <div class="calendar-day">1</div>
-            <div class="calendar-day">2</div>
-            <div class="calendar-day">3</div>
-            <div class="calendar-day">4</div>
-            <div class="calendar-day">5</div>
-            <div class="calendar-day">6</div> 
-            <div class="calendar-day">7</div>
-            <div class="calendar-day">8</div>
-            <div class="calendar-day">9</div>
-            <div class="calendar-day">10</div>
-            <div class="calendar-day">11</div>
-            <div class="calendar-day">12</div>
-            <div class="calendar-day">13</div>
-            <div class="calendar-day active">14</div>
-            <div class="calendar-day">15</div>
-            <div class="calendar-day">16</div>
-            <div class="calendar-day">17</div>
-            <div class="calendar-day">18</div>
-            <div class="calendar-day">19</div> 
-            <div class="calendar-day">20</div>
-            <div class="calendar-day">21</div>
-            <div class="calendar-day">22</div>
-            <div class="calendar-day">23</div>
-            <div class="calendar-day">24</div>
-            <div class="calendar-day">25</div>
-            <div class="calendar-day">26</div>
-            <div class="calendar-day">27</div>
-            <div class="calendar-day">28</div>
-            <div class="calendar-day">29</div>
-            <div class="calendar-day">30</div>
-
-            <div class="calendar-day empty">1</div>
-            <div class="calendar-day empty">2</div>
-        </div>
-
+            <div class="d-flex">
+                <p>Telefone atual: (18) 99102-4015</p>
+            </div>
+            <div class="floating-labels mb-3">
+                <label for="#" class="text-dark">Novo Número de Telefone</label>
+                <i class="bi bi-telephone-fill"></i>
+                <input type="tel" class="form-control" placeholder="(99) 99999-9999" style="border-radius: 10px;">
+            </div>
+            <div class="d-flex mt-3 justify-content-center">
+                <button type="submit" class="btn text-white d-md-inline-block d-flex fw-bold" style="background-color: #FF6B00;">Atualizar</button>
+            </div>
+        </form>
     </div>
-</div>
 </body>
 </html>
