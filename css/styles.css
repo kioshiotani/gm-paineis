@@ -288,3 +288,45 @@ input[type='radio'] {
     cursor: default;
     color: gray;
 }
+
+.service-icons {
+    font-size: 1.2em;
+}
+
+.service-icons i {
+    margin-right: 0.3em;
+}
+
+.service-right p {
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.service-icons {
+    width: 35%;
+}
+
+.service-right {
+    width: 65%;
+}
+
+.service-bar-name {
+    width: 40%
+}
+
+.service-box-content {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .service-icons {
+        width: 20%;
+    }
+    .service-right {
+        width: 80%;
+    }
+    .service-name {
+        width: 50%;
+    }
+}
+

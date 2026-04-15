@@ -19,7 +19,7 @@
     <div class="offcanvas-body">
         <ul class="nav flex-column">
         <li class="nav-item mb-2">
-            <a class="nav-link text-white active" href="#">Calendário</a>
+            <a class="nav-link text-white active" href="#">Agenda</a>
         </li>
         <li class="nav-item mb-2">
             <a class="nav-link text-white" href="#">Avaliações</a>
@@ -47,60 +47,181 @@
                 </div>
         </div>
     </nav>
-    <div class="col-md-8 mx-auto bg-light p-4 rounded shadow align-items-center justify-content-center mt-4">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h4 class="mb-0 fw-bold">Abril 2026</h4>
-            <div>
-                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-chevron-left"></i></button>
-                <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-chevron-right"></i></button>
+
+    <main>
+        <div class="col-md-8 mx-auto bg-light p-4 rounded shadow align-items-center justify-content-center mt-4 mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0 fw-bold">Abril 2026</h4>
+                <div>
+                    <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-chevron-left"></i></button>
+                    <button class="btn btn-outline-secondary rounded-circle"><i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="calendar-weekdays d-flex text-center text-muted fw-bold mb-3">
+                <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+            </div>
+
+            <div class="calendar-days">
+                <div class="calendar-day empty">29</div>
+                <div class="calendar-day empty">30</div>
+                <div class="calendar-day empty">31</div>
+                
+                <div class="calendar-day">1</div>
+                <div class="calendar-day">2</div>
+                <div class="calendar-day">3</div>
+                <div class="calendar-day">4</div>
+                <div class="calendar-day">5</div>
+                <div class="calendar-day">6</div> 
+                <div class="calendar-day">7</div>
+                <div class="calendar-day">8</div>
+                <div class="calendar-day">9</div>
+                <div class="calendar-day">10</div>
+                <div class="calendar-day">11</div>
+                <div class="calendar-day">12</div>
+                <div class="calendar-day">13</div>
+                <div class="calendar-day active">14</div>
+                <div class="calendar-day">15</div>
+                <div class="calendar-day">16</div>
+                <div class="calendar-day">17</div>
+                <div class="calendar-day">18</div>
+                <div class="calendar-day">19</div> 
+                <div class="calendar-day">20</div>
+                <div class="calendar-day">21</div>
+                <div class="calendar-day">22</div>
+                <div class="calendar-day">23</div>
+                <div class="calendar-day">24</div>
+                <div class="calendar-day">25</div>
+                <div class="calendar-day">26</div>
+                <div class="calendar-day">27</div>
+                <div class="calendar-day">28</div>
+                <div class="calendar-day">29</div>
+                <div class="calendar-day">30</div>
+
+                <div class="calendar-day empty">1</div>
+                <div class="calendar-day empty">2</div>
             </div>
         </div>
 
-        <div class="calendar-weekdays d-flex text-center text-muted fw-bold mb-3">
-            <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+        <div id="services" class="shadow container-fluid container-md col-md-8 mt-5 p-5 mb-5">
+            <h1>Serviços agendados</h1>
+            <div class="container-fluid bg-black" style="height: 1px"></div>
+            <div class="service-items">
+
+                <div class="service-box my-5 shadow p-3">
+                    <div class="d-flex flex-row">
+                        <div class="service-icons">
+                            <i class="bi bi-trash" role="button" style="cursor: pointer;"></i>
+                            <i class="bi bi-pencil" role="button" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#service_box_edit_1" aria-expanded="false" aria-controls="service_box_edit_1"></i>
+                            <i class="bi bi-check2" role="button" style="cursor: pointer;"></i>
+                        </div>
+                        <div class="service-right d-flex flex-row justify-content-between" data-bs-toggle="collapse" data-bs-target="#service_box_content_1" role="button" style="cursor: pointer;" aria-expanded="false" aria-controls="service_box_content_1">
+                            <p class="service-bar-name overflow-hidden d-block">NOME GRANDE DEMAIS PARA CABER NA TELA NOME MUITO GRANDE</p>
+                            <p class="d-none d-lg-block overflow-hidden service-mods">10000 módulos</p>
+                            <p>01/06/2005</p>
+                        </div>
+                    </div> 
+                    <div class="collapse" id="service_box_content_1">
+                        <div class="p-3 border-top">
+                            <p class="service-box-content">NOME: NOME GRANDE DEMAIS PARA CABER NA TELA NOME MUITO GRANDE</p>
+                            <p class="service-box-content">TELEFONE: 342342432</p>
+                            <p class="service-box-content">ENDEREÇO: Rua Miguel Petroni, Jardim Bandeirantes, 234, São Carlos-SP</p>
+                            <p class="service-box-content">MÓDULOS: 10000 módulos</p>
+                            <p class="service-box-content">PREÇO: R$ 800,00</p>
+                            <p class="service-box-content">OBS: Cliente já pagou pelo serviço</p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="service_box_edit_1">
+                        <form class="p-3 border-top">
+                            <div class="mb-3">
+                                <label for="service_box_edit_1_name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="service_box_edit_1_name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_1_telephone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="service_box_edit_1_telephone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_1_address" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_1_modules" class="form-label">Quantidade de módulos</label>
+                                <input type="number" class="form-control" id="service_box_edit_1_modules">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_1_price" class="form-label">Preço</label>
+                                <input type="number" class="form-control" id="service_box_edit_1_price">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_1_obs" class="form-label">Observações</label>
+                                <input type="text" class="form-control" id="service_box_edit_1_obs">
+                            </div>
+                            <button type="submit" class="btn text-white" style="background-color: #FF6B00">Atualizar</button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="service-box my-5 shadow p-3">
+                    <div class="d-flex flex-row">
+                        <div class="service-icons">
+                            <i class="bi bi-trash" role="button" style="cursor: pointer;"></i>
+                            <i class="bi bi-pencil" role="button" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#service_box_edit_2" aria-expanded="false" aria-controls="service_box_edit_2"></i>
+                            <i class="bi bi-check2" role="button" style="cursor: pointer;"></i>
+                        </div>
+                        <div class="service-right d-flex flex-row justify-content-between" data-bs-toggle="collapse" data-bs-target="#service_box_content_2" role="button" style="cursor: pointer;" aria-expanded="false" aria-controls="service_box_content_2">
+                            <p class="service-bar-name overflow-hidden d-block">Matteo Augusto Pinheiro</p>
+                            <p class="d-none d-lg-block overflow-hidden service-mods">10000 módulos</p>
+                            <p>01/06/2005</p>
+                        </div>
+                    </div> 
+                    <div class="collapse" id="service_box_content_2">
+                        <div class="p-3 border-top">
+                            <p class="service-box-content">NOME: Matteo Augusto Pinheiro</p>
+                            <p class="service-box-content">TELEFONE: 23453425342</p>
+                            <p class="service-box-content">ENDEREÇO: Avenida Francisco Pereira Lopes, Jardim Arnold Schmidt, 157, São Carlos-SP</p>
+                            <p class="service-box-content">MÓDULOS: 10000 módulos</p>
+                            <p class="service-box-content">PREÇO: R$ 800,00</p>
+                            <p class="service-box-content">OBS: Cliente ainda não pagou e está devendo dois serviços anteriores</p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="service_box_edit_2">
+                        <form class="p-3 border-top">
+                            <div class="mb-3">
+                                <label for="service_box_edit_2_name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="service_box_edit_2_name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_2_telephone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="service_box_edit_2_telephone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_2_address" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="service_box_edit_2_address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_2_modules" class="form-label">Quantidade de módulos</label>
+                                <input type="number" class="form-control" id="service_box_edit_2_modules">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_2_price" class="form-label">Preço</label>
+                                <input type="number" class="form-control" id="service_box_edit_2_price">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service_box_edit_2_obs" class="form-label">Observações</label>
+                                <input type="text" class="form-control" id="service_box_edit_2_obs">
+                            </div>
+                            <button type="submit" class="btn text-white" style="background-color: #FF6B00">Atualizar</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </main> 
 
-        <div class="calendar-days">
-            <div class="calendar-day empty">29</div>
-            <div class="calendar-day empty">30</div>
-            <div class="calendar-day empty">31</div>
-            
-            <div class="calendar-day">1</div>
-            <div class="calendar-day">2</div>
-            <div class="calendar-day">3</div>
-            <div class="calendar-day">4</div>
-            <div class="calendar-day">5</div>
-            <div class="calendar-day">6</div> 
-            <div class="calendar-day">7</div>
-            <div class="calendar-day">8</div>
-            <div class="calendar-day">9</div>
-            <div class="calendar-day">10</div>
-            <div class="calendar-day">11</div>
-            <div class="calendar-day">12</div>
-            <div class="calendar-day">13</div>
-            <div class="calendar-day active">14</div>
-            <div class="calendar-day">15</div>
-            <div class="calendar-day">16</div>
-            <div class="calendar-day">17</div>
-            <div class="calendar-day">18</div>
-            <div class="calendar-day">19</div> 
-            <div class="calendar-day">20</div>
-            <div class="calendar-day">21</div>
-            <div class="calendar-day">22</div>
-            <div class="calendar-day">23</div>
-            <div class="calendar-day">24</div>
-            <div class="calendar-day">25</div>
-            <div class="calendar-day">26</div>
-            <div class="calendar-day">27</div>
-            <div class="calendar-day">28</div>
-            <div class="calendar-day">29</div>
-            <div class="calendar-day">30</div>
 
-            <div class="calendar-day empty">1</div>
-            <div class="calendar-day empty">2</div>
-        </div>
-
-    </div>
 </div>
 </body>
 </html>
