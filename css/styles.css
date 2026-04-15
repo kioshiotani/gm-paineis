@@ -330,3 +330,33 @@ input[type='radio'] {
     }
 }
 
+.review-stars {
+    width: 50%;
+}
+
+.review-bar-name {
+    white-space: nowrap;
+    width: 50%;
+}
+
+.review-left {
+    width: 80%;
+}
+
+@media (min-width: 992px) {
+    .review-stars {
+        width: 20%;
+    }
+    .review-bar-name {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .review-stars {
+        width: 15%;
+    }
+    .review-bar-name {
+        width: 85%;
+    }
+}
